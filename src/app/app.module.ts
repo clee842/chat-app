@@ -8,11 +8,13 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { MessageService } from './providers/message/message.service';
+import { MessageComponent } from './components/message/message.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChatWindowComponent
+    ChatWindowComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,

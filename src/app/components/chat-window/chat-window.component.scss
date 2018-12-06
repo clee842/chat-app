@@ -9,4 +9,13 @@
     border-right: 1px solid #555555;
     width: 500px;
     margin: 0 auto;
+
+    .messages-container {
+        display: flex;
+        flex-direction: column-reverse;
+        overflow-x: scroll;
+        overflow-x: auto;
+        padding-right: 5px;
+        margin: 5px 0;
+    }
 }
