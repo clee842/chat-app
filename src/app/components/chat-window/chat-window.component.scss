@@ -1,7 +1,7 @@
 :host {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -17,5 +17,16 @@
         overflow-x: auto;
         padding-right: 5px;
         margin: 5px 0;
+        margin-top: auto;
+    }
+
+    .input-container {
+        padding: 15px 0;
+        display: flex;
+
+        textarea {
+            overflow: hidden;
+            resize: none;
+        }
     }
 }

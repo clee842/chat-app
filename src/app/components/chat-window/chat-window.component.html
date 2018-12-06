@@ -1,5 +1,19 @@
+<div class="nickname-container">
+  <input class="input" type="text" placeholder="Enter a nickname" [(ngModel)]="nickName"/>
+</div>
+
 <div class="messages-container">
-  <div *ngFor="let message of messages | async">
-    <app-message [message]="message"></app-message>
-  </div>
+<div *ngFor="let message of messages | async">
+  <app-message [message]="message"></app-message>
+</div>
+</div>
+
+<div class="input-container">
+  <textarea class="input"
+            type="text"
+            placeholder="Type something"
+            (keyup.enter)="sendMessage()"
+            [(ngModel)]="inputMessage"
+  ></textarea>
+  <button class="button" (click)="sendMessage()">Send</button>
 </div>
