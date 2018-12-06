@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { IMessage } from '../../shared/interfaces';
 
 @Component({
   selector: 'app-message',
@@ -7,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class MessageComponent implements OnInit {
 
-  @Input() public message: any;
+  @Input() public message: IMessage;
 
   constructor() { }
 
